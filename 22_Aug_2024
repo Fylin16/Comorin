@@ -1,4 +1,4 @@
-
+1.
 package assesmentComorin;
 
 public class ReplaceArr {
@@ -11,5 +11,58 @@ public class ReplaceArr {
 				
 			}
 		}
+	}
+}
+
+2.
+package assesmentComorin;
+
+public class Multiples {
+	public static void main(String[] args) {
+		for(int i=1;i<=100;i++) {
+			System.out.println(i);
+			
+			if(i%3==0) {
+				System.out.println("fizz");
+				if(i%3==0 && i%5==0) {
+					System.out.println("fizzBuzz");
+				}
+			}
+			
+		}
+	}
+}
+
+3.
+import java.util.Scanner;
+
+public class NaturalNum {
+ public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	
+	int num=sc.nextInt();
+	int res=0;
+	for(int i=1;i<=num;i++) {
+		res+=i;
+	}
+	System.out.println(res);
+}
+}
+
+4.
+package assesmentComorin;
+
+import java.util.Scanner;
+
+public class Factorial {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		int num=sc.nextInt();
+		int res=1;
+		for(int i=1;i<=num;i++) {
+			res*=i;
+		}
+		System.out.println(res);
 	}
 }
