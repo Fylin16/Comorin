@@ -1,4 +1,4 @@
-1.
+1.Reverse an array
 package assesmentComorin;
 
 import java.util.Scanner;
@@ -34,7 +34,7 @@ public class ReplaceArr {
 	}
 }
 
-2.
+2.FizzBuzz
 public class Multiples {
 	public static void main(String[] args) {
 		for(int i=1;i<=100;i++) {
@@ -55,7 +55,7 @@ public class Multiples {
 		}
 	}
 
-3.
+3.Sum of Natural Numbers
 import java.util.Scanner;
 
 public class NaturalNum {
@@ -71,7 +71,7 @@ public class NaturalNum {
 }
 }
 
-4.
+4.Factorial
 package assesmentComorin;
 
 import java.util.Scanner;
