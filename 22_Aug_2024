@@ -1,37 +1,59 @@
 1.
 package assesmentComorin;
 
+import java.util.Scanner;
+
 public class ReplaceArr {
 	public static void main(String[] args) {
-		int[] arrSeq= {1,2,3,4,5};
 		
+		Scanner sc=new Scanner(System.in);
+
+		int[] arrSeq=new int[5];
 		int arrLen=arrSeq.length;
-		for(int i=0;i<arrLen/2;i++) {
-			for(int j=arrLen/2;j>0;j--) {
-				
-			}
+		System.out.print("Enter 5 numbers : ");
+		
+		for(int i=0;i<arrLen;i++) {
+			arrSeq[i]=sc.nextInt();
+		}
+		
+		sc.close();
+		int end=arrLen-1;
+		int start=0;
+		while(start<end) {
+			int temp=arrSeq[start];
+			arrSeq[start]=arrSeq[end];
+			arrSeq[end]=temp;
+			start++;
+			end--;
+		}
+		
+		System.out.print("Reverse of integer Array : ");
+		for(int i:arrSeq) {
+			System.out.print(i+" ");
 		}
 	}
 }
 
 2.
-package assesmentComorin;
-
 public class Multiples {
 	public static void main(String[] args) {
 		for(int i=1;i<=100;i++) {
-			System.out.println(i);
-			
-			if(i%3==0) {
-				System.out.println("fizz");
-				if(i%3==0 && i%5==0) {
-					System.out.println("fizzBuzz");
-				}
-			}
+		  if (i % 3 == 0 && i % 5 == 0) {
+              System.out.println("FizzBuzz");
+          }
+          else if (i % 3 == 0) {
+              System.out.println("Fizz");
+          }
+          else if (i % 5 == 0) {
+              System.out.println("Buzz");
+          }
+          else {
+              System.out.println(i);
+          }
+		}
 			
 		}
 	}
-}
 
 3.
 import java.util.Scanner;
@@ -39,13 +61,13 @@ import java.util.Scanner;
 public class NaturalNum {
  public static void main(String[] args) {
 	Scanner sc=new Scanner(System.in);
-	
+	System.out.print("Enter a number : ");
 	int num=sc.nextInt();
 	int res=0;
 	for(int i=1;i<=num;i++) {
 		res+=i;
 	}
-	System.out.println(res);
+	System.out.println("The sum of First "+num+" natural numbers is "+res);
 }
 }
 
@@ -57,12 +79,12 @@ import java.util.Scanner;
 public class Factorial {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		
+		System.out.print("Enter a number : ");
 		int num=sc.nextInt();
 		int res=1;
 		for(int i=1;i<=num;i++) {
 			res*=i;
 		}
-		System.out.println(res);
+		System.out.println("The factorial of "+num+" is "+res);
 	}
 }
