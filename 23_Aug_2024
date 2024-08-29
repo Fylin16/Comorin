@@ -1,0 +1,171 @@
+1.
+package assesmentComorin;
+
+import java.util.Scanner;
+
+public class About {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	
+	System.out.print("Enter your name : ");
+	String name=sc.next();
+	System.out.print("Enter your age : ");
+	int age=sc.nextInt();
+	sc.close();
+	
+	System.out.println("OUTPUT:\nHello my name is "+name+" and I am "+age+ " years old");
+	
+}
+}
+
+2.
+package assesmentComorin;
+
+import java.util.Scanner;
+
+public class NumberType {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter num : ");
+		int num=sc.nextInt();
+		sc.close();
+		if(num==0) {
+			System.out.println("Number is zero");
+		}
+		else if(num>0){
+			System.out.println("Number is positive");
+		}
+		else {
+			System.out.println("Number is negative");
+		}
+	}
+}
+
+3.
+package assesmentComorin;
+
+public class NumberMethod {
+	
+	public static void main(String[] args) {
+		NumberMethod classObj=new NumberMethod();
+		
+		for(int i=1;i<=10;i++) {
+			if(classObj.isEvent(i)) {
+				System.out.println(i+" - even");
+			}
+			else{
+				System.out.println(i+" -odd");
+			}
+		}	
+	}
+	
+	boolean isEvent(int num) {
+		
+		if(num%2==0) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+}
+
+
+4.
+import java.time.LocalDate;
+
+public class DateFormat {
+public static void main(String[] args) {
+	LocalDate date=LocalDate.now();
+}
+
+}
+
+5.
+import java.util.Scanner;
+
+public class PrimeWithCondition {
+	 public static void main(String[] args) {
+		 
+		 Scanner input=new Scanner(System.in);
+			
+			System.out.print("Enter Starting and Ending number :");
+			int num1=input.nextInt();
+			int num2=input.nextInt();
+			input.close();
+			PrimeWithCondition obj=new PrimeWithCondition();
+			for(int i=num1;i<=num2;i++) {
+			if(obj.PrimeNums(i)){
+				System.out.print(i+" ");
+			}
+		}
+	}
+	 boolean PrimeNums(int num) {
+			if(num<=1) {
+				return false;
+			}
+			for(int j=2;j<=Math.sqrt(num);j++) {
+				if(num%j==0) {
+					return false;
+				}
+			}
+			return true;
+		}	
+}
+
+6.
+
+import java.util.Scanner;
+
+public class Division {
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter 2 numbers to divide : ");
+		int num1=sc.nextInt();
+		int num2=sc.nextInt();
+		sc.close();
+		int div=0;
+		try {
+			div=num1/num2;
+			System.out.println("Output is : "+div);
+
+		}
+		catch(ArithmeticException e) {
+			System.out.println("the error is :"+ e);
+		}
+
+}
+}
+
+
+7.
+package assesmentComorin;
+
+public class Array {
+
+	public static void main(String[] args) {
+		int[] arrSeq= {1,2,3,4,5};
+		
+		int sum;
+		for(int a:arrSeq) {
+			sum+=a;
+		}
+	}
+}
+
+8.
+package assesmentComorin;
+
+public class CarObject {
+	public static void main(String[] args) {
+		 
+		String make
+	
+	}
+}
+
+
+
+
